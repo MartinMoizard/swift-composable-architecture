@@ -53,6 +53,14 @@ let dataSource: [CaseStudy] = [
       }
     )
   ),
+  CaseStudy(
+    title: "Bug sample",
+    viewController: BugSampleViewController(
+        store: Store(initialState: BugSample.State()) {
+            BugSample()
+        }
+      )
+  )
 ]
 
 final class RootViewController: UITableViewController {
